@@ -29,7 +29,7 @@ After upgrading the package, the script runs normally.
 ## Project Structure
 
 ```
-UvsTask/
+src/
 ├── UvsTask.ConsoleApp/          # CLI entry point, argument parsing, DI setup
 ├── UvsTask.Application/         # Application services, business logic, interfaces
 ├── UvsTask.Domain/              # Domain entities
@@ -57,18 +57,22 @@ Run the initial verification script to validate application behavior from the ro
 
 ## Configuration
 
-The application requires a `DB_CONNECTION` environment variable with a PostgreSQL connection string. `.env` file in the `UvsTask.ConsoleApp` directory already:
+The application requires a `DB_CONNECTION` environment variable with a PostgreSQL connection string.
+
+You can either provide it directly as an environment variable or create a `.env` file in `src/UvsTask.ConsoleApp`:
+
 
 ```
-Host=localhost;Port=7777;Database=uvsproject;Username=postgres;Password=guest
+DB_CONNECTION=Host=localhost;Port=7777;Database=uvsproject;Username=postgres;Password=guest
 ```
 
-The application automatically loads this configuration on startup.
+The application will automatically load the `.env` file on startup.  
+Alternatively, the variable can be provided directly via the CLI environment.
 
 
 ## Running the Application
 
-Execute all commands from the `UvsTask.ConsoleApp` directory.
+Execute all commands from the `src/UvsTask.ConsoleApp` directory.
 
 **Set Employee** - Create or update an employee:
 

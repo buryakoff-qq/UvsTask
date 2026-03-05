@@ -1,12 +1,11 @@
 
 # feel free to modify this line if your project structure is different to expected
-cd UvsTask/Employee
 
 $Env:DB_CONNECTION="Server=localhost; User ID=postgres; Password=guest; Port=7777; Database=uvsproject;"
 
 dotnet build
 
-cd ./UVSTask.ConsoleApp
+cd ./src/UVSTask.ConsoleApp
 
 dotnet run --no-build set-employee --employeeId 1 --employeeName John --employeeSalary 123
 dotnet run --no-build set-employee --employeeId 2 --employeeName Steve --employeeSalary 456
