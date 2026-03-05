@@ -18,7 +18,7 @@ public sealed class EmployeeService : IEmployeeService
     public async Task SetAsync(int employeeId, string employeeName, int employeeSalary, CancellationToken ct)
     {
         if (employeeId <= 0) throw new ArgumentOutOfRangeException(nameof(employeeId));
-        if (string.IsNullOrEmpty(employeeName)) throw new ArgumentException(null, nameof(employeeName));
+        if (string.IsNullOrEmpty(employeeName)) throw new ArgumentException(nameof(employeeName));
         if (employeeSalary <= 0) throw new ArgumentOutOfRangeException(nameof(employeeSalary));
 
         var employee = new Employee
