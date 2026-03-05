@@ -1,12 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.ConsoleApp", "UvsTask.ConsoleApp\UvsTask.ConsoleApp.csproj", "{7728A052-BEB9-4DB5-A42A-F4FBC8B06623}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.ConsoleApp", "src\UvsTask.ConsoleApp\UvsTask.ConsoleApp.csproj", "{7728A052-BEB9-4DB5-A42A-F4FBC8B06623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Domain", "UvsTask.Domain\UvsTask.Domain.csproj", "{772233C0-5B94-476D-8B90-4A106A44BB4F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Domain", "src\UvsTask.Domain\UvsTask.Domain.csproj", "{772233C0-5B94-476D-8B90-4A106A44BB4F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Infrastructure", "UvsTask.Infrastructure\UvsTask.Infrastructure.csproj", "{9931AAF5-42ED-4616-8BE7-C2EFFD18A199}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Infrastructure", "src\UvsTask.Infrastructure\UvsTask.Infrastructure.csproj", "{9931AAF5-42ED-4616-8BE7-C2EFFD18A199}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Application", "UvsTask.Application\UvsTask.Application.csproj", "{FCC210E2-0BC4-4725-91DA-41664F9965AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvsTask.Application", "src\UvsTask.Application\UvsTask.Application.csproj", "{FCC210E2-0BC4-4725-91DA-41664F9965AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{31576467-133B-4036-9C47-56E11ACC4715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +32,11 @@ Global
 		{FCC210E2-0BC4-4725-91DA-41664F9965AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCC210E2-0BC4-4725-91DA-41664F9965AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCC210E2-0BC4-4725-91DA-41664F9965AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FCC210E2-0BC4-4725-91DA-41664F9965AD} = {31576467-133B-4036-9C47-56E11ACC4715}
+		{7728A052-BEB9-4DB5-A42A-F4FBC8B06623} = {31576467-133B-4036-9C47-56E11ACC4715}
+		{772233C0-5B94-476D-8B90-4A106A44BB4F} = {31576467-133B-4036-9C47-56E11ACC4715}
+		{9931AAF5-42ED-4616-8BE7-C2EFFD18A199} = {31576467-133B-4036-9C47-56E11ACC4715}
 	EndGlobalSection
 EndGlobal
